@@ -1,11 +1,26 @@
 <h1>Welcome to MYDAS Site!</h1>
 <% @topics.each do |topic| %>
-  <div class="">
+  <!-- <div class="">
     <h1><a href="/<%= topic.id %>"><%= topic.title %></a></h1>
     <p>ID number :<%= topic.id %></p>
     <p>body:<%= topic.body %></p>
-    <p>comments:<%= topic.comments %></p>
     <p>author:<%= topic.author %></p>
     <p>date:<%= topic.date %></p>
+  </div> -->
+
+  <!-- <p>comments:<%= topic.comments %></p> -->
+
+
+
+  <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><a href="/<%= topic.id %>"><%= topic.title %></a></h5>
+    <h6 class="card-subtitle mb-2 text-muted">post ID:<%= topic.id %></h6>
+    <p class="card-text"><%= topic.body %></p>
+    <p class="card-text"> By: <%= topic.author %></p>
+    <p>comments:<%= topic.comments %></p>
+    <a href="/<%= topic.id %>" class="card-link">Card-link</a>
+    <a href="/<%= topic.id %>/edit" class="card-link">Edit</a>
   </div>
+</div>
 <% end %>

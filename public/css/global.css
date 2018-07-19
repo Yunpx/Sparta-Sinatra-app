@@ -1,0 +1,10 @@
+body{
+  background-color: lightblue;
+}
+
+.card{
+  border: double black;
+  display: inline-block;
+  padding: 2px;
+  margin: 5px;
+}
