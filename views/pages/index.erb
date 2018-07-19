@@ -1,0 +1,11 @@
+<h1>Welcome to MYDAS Site!</h1>
+<% @topics.each do |topic| %>
+  <div class="">
+    <h1><a href="/<%= topic.id %>"><%= topic.title %></a></h1>
+    <p>ID number :<%= topic.id %></p>
+    <p>body:<%= topic.body %></p>
+    <p>comments:<%= topic.comments %></p>
+    <p>author:<%= topic.author %></p>
+    <p>date:<%= topic.date %></p>
+  </div>
+<% end %>
