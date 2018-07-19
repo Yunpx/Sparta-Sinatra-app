@@ -84,7 +84,7 @@ class TopicController < Sinatra::Base
     id = params[:id].to_i
 
     # delete the news from the database
-    topic.destroy(id)
+    Topic.destroy(id)
 
     # redirect back to the homepage
     redirect "/"
