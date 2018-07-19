@@ -1,0 +1,12 @@
+<h1><%= @topic.title %></h1>
+<a href="/<%= @topic.id %>"></a>
+<p><%= @topic.body %></p>
+<p>ID number: <%=@topic.id %></p>
+<form action="/<%= @topic.id %>" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete">
+</form>
+
+<form action="/<%= @topic.id %>/edit" method="GET">
+  <input type="submit" value="Edit">
+</form>
